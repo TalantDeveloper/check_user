@@ -19,4 +19,4 @@ def read_subscriber():
 
 while True:
     read_subscriber()
-    time.sleep(1)
+    time.sleep(5)
