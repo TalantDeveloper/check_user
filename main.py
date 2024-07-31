@@ -13,6 +13,7 @@ def read_subscriber():
         port = i[3]
         username = i[4]
         password = i[5]
+
         chech_endpoint(api, port, username, password)
         check_channels(api, port, username, password)
 

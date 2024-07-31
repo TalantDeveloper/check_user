@@ -27,3 +27,7 @@ def check_channels(api, port, username, password):
     else:
         print(f"Failed to get channels data. Status code: {response.status_code}, Response: {response.text}")
 
+
+def check_ping(api, port, username, password):
+    ARI_URL = f'http://{api}:{port}/ari/asterisk/ping'
+    response = requests.get(ARI_URL, auth=HTTPBasicAuth(username, password))
